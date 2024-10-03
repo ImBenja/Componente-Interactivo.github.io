@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Componente Calificativo Interactivo</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image" href="assets/img/favicon-32x32.png" />
+  </head>
+  <body>
+    <section id="rating-component" class="container">
+      <div class="imagen">
+        <img src="assets/img/icon-star.svg" class="star" alt="Estrella" />
+      </div>
+      <h2 class="title">How did we do?</h2>
+      <p class="paraght">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="buttons">
+        <button class="rating-btn" data-value="1">1</button>
+        <button class="rating-btn" data-value="2">2</button>
+        <button class="rating-btn" data-value="3">3</button>
+        <button class="rating-btn" data-value="4">4</button>
+        <button class="rating-btn" data-value="5">5</button>
+      </div>
+      <button id="enviar-btn" class="submit-btn" type="submit">Submit</button>
+    </section>
+
+    <section id="container-thank-you" class="container hidden">
+      <img
+        src="assets/img/illustration-thank-you.svg"
+        class="img-thank"
+        alt="listo"
+      />
+      <div class="num">
+        <p class="select">
+          You selected <span id="selected-rating">0</span> out of 5
+        </p>
+      </div>
+      <h2 class="title">Thank You!</h2>
+      <p class="paraght">
+        We appreciate you taking the time to give a rating, if you ever need
+        more support, don't hesilate to get in touch!
+      </p>
+    </section>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

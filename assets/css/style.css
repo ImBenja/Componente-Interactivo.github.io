@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /*COLORES*/
+
+  /*PRIMARIOS*/
+
+  --Orange: hsl(25, 97%, 53%);
+
+  /*NEUTRALES*/
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Overpass";
+}
+
+body {
+  background-color: var(--Very-Dark-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--Dark-Blue);
+  max-width: 350px;
+  padding: 24px;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.imagen .star {
+  background-color: rgb(41, 49, 60);
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.title {
+  color: var(--White);
+  font-weight: 600;
+  margin-top: 1.2rem;
+}
+
+.paraght {
+  color: var(--Light-Grey);
+  opacity: 80%;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 0.9rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+
+.rating-btn {
+  background-color: rgb(47, 52, 61);
+  border: none;
+  outline: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: var(--Light-Grey);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.rating-btn:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+.rating-btn.active {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+.submit-btn {
+  background-color: var(--Orange);
+  border: none;
+  padding: 9px;
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--White);
+}
+
+.hidden {
+  display: none;
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.thank-you .num {
+  background-color: rgb(45, 51, 59);
+  padding: 5px 3px;
+  border-radius: 20px;
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 1.2rem;
+}
+
+.thank-you .num .select {
+  color: var(--Orange);
+  font-size: 13px;
+}
